@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root sourceSkin="Fluenx-BASE">
+
+<element id="Panel">
+  <images stretchY1="1" stretchY2="1"
+    default="Images\Controls\Background.png"
+  />
+</element>
+
+<element id="PrevTrackButton" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Left" offset="17" />
+  <top relativeTo="Panel.VerticalCenter" offset="0" />
+  <images drawPlayButton="false"
+    default="Images\Controls\ButtonPrev.png"
+    highlight="Images\Controls\ButtonPrevHighlight.png"
+    disabled="Images\Controls\ButtonPrevDisabled.png"
+  />
+</element>
+
+<element id="PlayPauseButton" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Left" offset="65" />
+  <top relativeTo="Panel.VerticalCenter" offset="0" />
+  <images category="Play" drawPlayButton="false"
+    default="Images\Controls\ButtonPlay.png"
+    highlight="Images\Controls\ButtonPlayHighlight.png"
+  />
+  <images category="Pause" drawPlayButton="false"
+    default="Images\Controls\ButtonPause.png"
+    highlight="Images\Controls\ButtonPauseHighlight.png"
+  />
+</element>
+
+<element id="NextTrackButton" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Left" offset="113" />
+  <top relativeTo="Panel.VerticalCenter" offset="0" />
+  <images drawPlayButton="false"
+    default="Images\Controls\ButtonNext.png"
+    highlight="Images\Controls\ButtonNextHighlight.png"
+    disabled="Images\Controls\ButtonNextDisabled.png"
+  />
+</element>
+
+<element id="StopTrackButton" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Left" offset="151" />
+  <top relativeTo="Panel.VerticalCenter" offset="0" />
+  <images drawPlayButton="false"
+    default="Images\Controls\ButtonStop.png"
+    highlight="Images\Controls\ButtonStopHighlight.png"
+    disabled="Images\Controls\ButtonStopDisabled.png"
+  /> 
+</element>
+
+<element id="Spectrum" parent="Panel">
+  <left relativeTo="StopTrackButton.Left" offset="48" />
+  <top relativeTo="Panel.Top" offset="15" />
+  <bottom relativeTo="Panel.Bottom" offset="-16" />
+</element>
+
+<element id="TrackInfoPanel" parent="Panel">
+  <left relativeTo="Panel.Left" offset="300" />
+  <top relativeTo="Panel.Top" offset="0" />
+  <right relativeTo="Panel.Right" offset="-300" />
+  <bottom relativeTo="Panel.Bottom" offset="0" />
+</element>
+
+<element id="TrackText" parent="TrackInfoPanel" multiLine="false">
+  <left relativeTo="Spectrum.Right" offset="56" />
+  <top relativeTo="Panel.Top" offset="11" />
+  <right relativeTo="Panel.HorizontalCenter" offset="220" />
+</element>
+
+<element id="ProgressBar" parent="TrackInfoPanel">
+  <left relativeTo="Spectrum.Right" offset="60" />
+  <top relativeTo="TrackInfoPanel.Bottom" offset="-28" />
+  <right relativeTo="TrackLove.Right" offset="-49" />
+  <bottom relativeTo="TrackInfoPanel.Bottom" offset="-8" />
+  <bufferingMargin top="6" bottom="6" left="2" right="2" />
+  <images category="Background" stretchY1="2" stretchY2="2" stretchX1="2" stretchX2="2"
+    default="Images\Controls\ProgressBar.png"
+  />
+  <images category="Filler" stretchX1="2" stretchX2="1"
+    default="Images\Controls\ProgressBarFill.png"
+  />
+  <images category="Button"
+    default="Images\Controls\BarButton.png"
+  />
+</element>
+
+<element id="TrackRating" parent="TrackPosition.Left">
+  <left relativeTo="TrackLove.Right" offset="-144" />
+  <top relativeTo="Speaker.VerticalCenter" offset="-11" />
+</element>
+
+<element id="TrackPosition" parent="TrackInfoPanel">
+  <left relativeTo="TrackLove.Right" offset="-44" />
+  <top relativeTo="Speaker.VerticalCenter" offset="-11" />
+</element>
+
+<element id="TrackLove" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Right" offset="-328" />
+  <top relativeTo="Panel.VerticalCenter" offset="-1" />
+  <images category="NotLoved"
+    default="Images\Controls\LastFmNotLove.png"
+    highlight="Images\Controls\LastFmNotLoveHighlight.png"
+  />
+  <images category="Loved"
+    default="Images\Controls\LastFmLove.png"
+    highlight="Images\Controls\LastFmLoveHighlight.png"
+  />
+  <images category="Banned"
+    default="Images\Controls\Banned.png"
+    highlight="Images\Controls\BannedHighlight.png"
+  />
+</element>
+
+<element id="LastFmButton" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Right" offset="-291" />
+  <top relativeTo="Panel.VerticalCenter" offset="0" />
+  <images category="Off"
+    default="Images\Controls\LastFmOff.png"
+    highlight="Images\Controls\LastFmOffHighlight.png"
+  />
+  <images category="On"
+    default="Images\Controls\LastFmOn.png"
+    highlight="Images\Controls\LastFmOnHighlight.png"
+  />
+  <images category="Error"
+    default="Images\Controls\LastFmError.png"
+    highlight="Images\Controls\LastFmErrorHighlight.png"
+  />
+</element>
+
+<element id="EqualiserButton" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Right" offset="-255" />
+  <top relativeTo="Panel.VerticalCenter" offset="0" />
+  <images category="Off"
+    default="Images\Controls\EqualiserOff.png"
+    highlight="Images\Controls\EqualiserOffHighlight.png"
+  />
+  <images category="On"
+    default="Images\Controls\EqualiserOn.png"
+    highlight="Images\Controls\EqualiserOnHighlight.png"
+  />
+</element>
+
+<element id="ShuffleButton" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Right" offset="-219" />
+  <top relativeTo="Panel.VerticalCenter" offset="0" />
+  <images category="Off"
+    default="Images\Controls\ShuffleOff.png"
+    highlight="Images\Controls\ShuffleOffHighlight.png"
+  />
+  <images category="On"
+    default="Images\Controls\ShuffleOn.png"
+    highlight="Images\Controls\ShuffleOnHighlight.png"
+  />
+  <images category="AutoDJ"
+    default="Images\Controls\ShuffleAutoDj.png"
+    highlight="Images\Controls\ShuffleAutoDjHighlight.png"
+  />  
+</element>
+
+<element id="RepeatButton" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Right" offset="-182" />
+  <top relativeTo="Panel.VerticalCenter" offset="0" />
+  <images category="Off"
+    default="Images\Controls\RepeatOff.png"
+    highlight="Images\Controls\RepeatOffHighlight.png"
+  />
+  <images category="On"
+    default="Images\Controls\RepeatOn.png"
+    highlight="Images\Controls\RepeatOnHighlight.png"
+  />
+  <images category="One"
+    default="Images\Controls\RepeatOne.png"
+    highlight="Images\Controls\RepeatOneHighlight.png"
+  />  
+</element>
+
+<element id="Speaker" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Right" offset="-146" />
+  <top relativeTo="Panel.VerticalCenter" offset="0" />
+  <images category="MuteOff"
+    default="Images\Controls\VolumeOn.png"
+    highlight="Images\Controls\VolumeOnHighlight.png"
+  />
+  <images category="MuteOn"
+    default="Images\Controls\VolumeOff.png"
+    highlight="Images\Controls\VolumeOffHighlight.png"
+  />
+</element>
+
+<element id="VolumeSlidebar" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Right" offset="-101" />
+  <top relativeTo="Speaker.VerticalCenter" offset="0" />
+  <images category="Slidebar" 
+    default="Images\Controls\VolumeSlidebar.png"
+  />
+  <images category="Button"
+    default="Images\Controls\BarButton.png"
+  />
+  <images category="Filler"
+    default="Images\Controls\VolumeSlidebarFill.png"
+  /> 
+</element>
+
+<!--HIDDEN-->
+<element id="TrackInfoButton" parent="TrackInfoPanel">
+  <left relativeTo="Panel.Left" offset="-150" />
+  <top relativeTo="Panel.VerticalCenter" offset="0" />
+  <images
+    default="Images\Controls\TrackInfoButton.png"
+  />
+</element>
+
+<replacementElement id="Spectrum" replaceWith="StopTrackButton.Left" offsetAdjustment="-13" />
+<replacementElement id="TrackLove" replaceWith="LastFmButton.Right" offsetAdjustment="0" />
+<replacementElement id="TrackRating" replaceWith="TrackPosition.Left" offsetAdjustment="0" />
+
+</root>

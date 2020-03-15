@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root sourceSkin="Fluenx-BASE">
+
+<element id="WaveBar" parent="TrackInfoPanel">
+  <left relativeTo="Spectrum.Right" offset="60" />
+  <top relativeTo="Speaker.VerticalCenter" offset="0" />
+  <right relativeTo="TrackRating.Left" offset="-6" />
+</element>
+
+<element id="TrackPosition" parent="TrackInfoPanel">
+  <left relativeTo="TrackLove.Right" offset="-41" />
+  <top relativeTo="Speaker.VerticalCenter" offset="-1" />
+</element>
+
+<element id="TrackRating" parent="TrackPosition.Left">
+  <left relativeTo="TrackPosition.Left" offset="-61" />
+  <top relativeTo="Speaker.VerticalCenter" offset="-1" />
+</element>
+
+</root>
