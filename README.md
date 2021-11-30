@@ -1,4 +1,10 @@
-# mb-skins
-Skins for MusicBee
+# Dark skins for [MusicBee](https://getmusicbee.com/)
 
-If you're gonna use the images from these skins to make your own at least give me the credits, cheers!
+## Fluenx
+![fluenx preview](./previews/fluenx.png)
+
+## MaterialMix
+![materialmix preview](./previews/materialmix.png)
+
+## Dark W10
+![dark-w10 preview](./previews/darkw10.png)
