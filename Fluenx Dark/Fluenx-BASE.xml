@@ -468,6 +468,8 @@
   <element id="WindowBorderWidth">0</element>
   <element id="PlayerAlignElementToDuration">TrackRating</element>
   <element id="PlayerAlignElementToDuration">TrackLove</element>
+  <element id="HideScrobbleButtonSupported">true</element>
+  <element id="HideScrobbleButtonOffset">-223</element>
 </settings>
 
 <images id="Default">
